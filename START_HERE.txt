@@ -1,0 +1,19 @@
+CSC-MS WEB — ITB CARNEGIE 2027/2028
+=================================
+
+1. BACA: README_MULAI_DI_SINI.md
+2. LIHAT LAYOUT: reference_layout/layout_dashboard_desktop.png
+3. PASANG SERVER: docker-compose.yml + Dockerfile + Caddyfile
+4. LOGIN REKTOR: username DrSteven, password sementara dihasilkan privat oleh
+   `docker compose exec app python manage.py bootstrap-admin --username DrSteven`
+   lalu WAJIB ganti password pertama kali.
+5. STAFF: Rektor membuat WR I, WR II, WR III, Operator/PIC, PMB dan Finance dari Manajemen Akun.
+6. DATA: SQLite permanen; Google Sheets/Drive dapat tersinkron setelah service account diotorisasi.
+7. DOMAIN: portal.itbcarnegie.com belum online. Web editor harus mengarahkan DNS dan HTTPS.
+
+PERINGATAN: JANGAN memasang admin/123456 pada website publik.
+Untuk tes offline lokal saja, 123456 bisa diset sebagai password sementara
+jika operator secara eksplisit mengaktifkan --allow-weak-local dan wajib diganti.
+
+Paket ini adalah SOURCE CODE aplikasi backend + frontend, bukan hanya prototype statis.
+Lihat docs/CHECKLIST_GO_LIVE.md untuk memastikan instalasi aman sebelum data asli.
